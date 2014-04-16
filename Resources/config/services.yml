@@ -1,0 +1,7 @@
+parameters:
+    chewbacca_exchange_rates.currency_converter.class: Chewbacca\ExchangeRatesBundle\Services\CurrencyConverter
+
+services:
+    chewbacca_exchange_rates.currency_converter:
+        class: %chewbacca_exchange_rates.currency_converter.class%
+        arguments: [@doctrine.orm.entity_manager]
